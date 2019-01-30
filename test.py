@@ -72,3 +72,5 @@ print(list(res))
 
 res = filter(lambda x:x.endswith('NBA'),list2)
 print(list(res))
+
+print('hello git')
