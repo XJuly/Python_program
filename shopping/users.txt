@@ -1,0 +1,7 @@
+a|b|2501
+aa|bb|471
+aaa|bbb|2501
+bb|cc|6999
+bbb|ccc|9999
+dd|cc|89000
+abc|abc|19000
