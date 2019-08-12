@@ -6,6 +6,7 @@
 # 装饰器，认证功能，用户密码来源于文件，设定超时时间，超时需重新登录
 import time
 
+
 current_user = {
     'user': None,
     'login_time':None,
@@ -32,7 +33,6 @@ def timer(func):
             auth(func)
 
         return res
-
     return wrapper
 
 
@@ -41,7 +41,6 @@ def auth(func):
         if current_user['user']:
             print('login already')
             return func(*args,**kwargs)
-
         name = input('username>>:').strip()
         pwd = input('pwd>>:').strip()
         with open('users.txt') as f:
@@ -57,7 +56,6 @@ def auth(func):
                     else:
                         print('error')
                         break
-
     return wrapper
 
 
@@ -71,7 +69,6 @@ def welcome():
 @timer
 def shopping():
     print('shopping')
-
 
 
 welcome()
